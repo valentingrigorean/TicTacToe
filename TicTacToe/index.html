@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>TicTacToe</title>
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="style/custom.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/animate.css" />
+</head>
+<body>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <div class="game">
+        <div class="grid">
+            <div value="0" class="cell left"><span>&nbsp;</span><h2></h2></div>
+            <div value="1" class="cell"><span>&nbsp;</span><h2></h2></div>
+            <div value="2" class="cell"><span>&nbsp;</span><h2></h2></div>
+
+            <div value="3" class="cell left"><span>&nbsp;</span><h2></h2></div>
+            <div value="4" class="cell"><span>&nbsp;</span><h2></h2></div>
+            <div value="5" class="cell"><span>&nbsp;</span><h2></h2></div>
+
+            <div value="6" class="cell left bottom"><span>&nbsp;</span><h2></h2></div>
+            <div value="7" class="cell bottom"><span>&nbsp;</span><h2></h2></div>
+            <div value="8" class="cell bottom"><span>&nbsp;</span><h2></h2></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 left-options">
+                <div>AI score:<span id="ai-score">0</span></div>
+                <div>Player score:<span id="player-score">0</span></div>
+                <div>Draws:<span id="draw-score">0</span></div>
+            </div>
+            <div class="col-md-6 right-options">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" id="diff-easy" name="difficulty" value="Easy" /> Easy
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" id="diff-medium" name="difficulty" value="Medium" /> Medium
+                    </label>
+                    <label class="btn btn-default active">
+                        <input type="radio" id="diff-hard" name="difficulty" value="Hard"/> Hard
+                    </label>
+                </div>
+                <div class="btn-group right-options" data-toggle="buttons">
+                    <label class="btn btn-default active">
+                        <input type="radio" id="seed-x" name="seed" value="X"/> X
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" id="seed-o" name="seed" value="O" /> O
+                    </label>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="scripts/tictactoe.js"></script>
+</body>
+</html>
