@@ -1,0 +1,60 @@
+﻿body{
+    background-image:url('http://www.dream-wallpaper.com/free-wallpaper/art-wallpaper/background-color-7-wallpaper/1920x1200/free-wallpaper-10.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.game{
+    width:500px;
+    display:block;
+    margin:0 auto;
+    position:relative;
+    padding:20px;        
+    border:2px solid gray;
+    background-color:white;
+}
+
+.grid{    
+    height:500px;   
+}
+
+.left-options{
+    display:table-row;
+    padding-top:5px;
+}
+.right-options{
+    padding-top:5px;
+}
+
+.cell{    
+    height:33.3333%;
+    width:33.3333%;
+    color:black;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:center;
+    padding:20px;
+    position:relative;
+    margin: 0 auto;
+    float:left;
+    border:solid;
+    border-color:black;
+    border-width:2px;
+    border-top:none;
+    border-right:none;
+    cursor:pointer;
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.cell.left{   
+    border-left:none;
+}
+
+.cell.bottom{
+    border-bottom:none;
+}
